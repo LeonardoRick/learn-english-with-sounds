@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".fragment.AnimalsFragment">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonDog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginLeft="49dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/cao"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonMonkey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="77dp"
+        android:layout_marginRight="77dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/gato"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonDog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonDog" />
+
+    <ImageButton
+        android:id="@+id/imageButtonMonkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/macaco"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonCow"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonDog"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonDog"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonDog" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/leao"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonMonkey"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonCat"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonCat"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonMonkey" />
+
+    <ImageButton
+        android:id="@+id/imageButtonCow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/vaca"
+        app:layout_constraintBottom_toTopOf="@+id/rights"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonMonkey"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonMonkey"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonMonkey" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSheep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ovelha"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButtonCow"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonLion"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonLion"
+        app:layout_constraintTop_toTopOf="@+id/imageButtonCow" />
+
+    <ImageView
+        android:id="@+id/rights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/direitos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
